@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Código JavaScript</title>
+</head>
+<body>
+    <!-- Exemplo ruim (obstrutivo): -->
+    <button onclick="alert('ok')">Clique</button> <!-- JS misturado ao HTML -->
+
+    <!-- Exemplo correto (não obstrutivo): -->
+    <button id="meuBotao">Clique</button>
+    <script>
+        document.getElementById('meuBotao').addEventListener('click', () => {
+            alert('ok'); // Comportamento separado do HTML
+        })
+    </script>
+</body>
+</html>
