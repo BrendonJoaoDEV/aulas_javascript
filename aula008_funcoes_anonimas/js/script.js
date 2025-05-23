@@ -18,11 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtém referências aos botões do DOM pelos seus IDs
     const saudarBtn = document.getElementById('saudar');
     const limparBtn = document.getElementById('limpar');
+    // Obtém referência a entrada do usuário
+    const input = document.getElementById('entrada');
 
     // Adiciona um listener de evento de clique no botão "saudar"
     saudarBtn.addEventListener('click', () => {
-        // Chama a função de saudação com o nome "João" e armazena o resultado
-        const mensagem = saudacao("João");
+        // Chama a função de saudação com o nome digitado pelo usuário e armazena o resultado
+        const mensagem = saudacao(input.value);
         // Chama a função para exibir o resultado na página
         mostrarResultado(mensagem);
     });

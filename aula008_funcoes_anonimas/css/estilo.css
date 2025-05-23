@@ -13,6 +13,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+.entrada-texto {
+    padding: 15px;
+    margin: 15px 0px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
 .button-group {
     margin-bottom: 20px;
 }
