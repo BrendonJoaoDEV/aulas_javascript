@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora de Área do Quadrado</h1>
+        <label for="ladoInput">Informe o valor do lado:</label>
+        <!-- "any" significa que qualquer valor numérico é aceito (incluindo decimais) -->
+        <input type="number" id="ladoInput" placeholder="Ex: 5" min="0" step="any">
+        <button id="calcularBtn">Calcular Área</button>
+        <p id="resultado" class="resultado"></p>
+    </main>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
